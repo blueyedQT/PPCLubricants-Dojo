@@ -1,0 +1,14 @@
+body {
+	width: 1022;
+	height: auto;
+}
+#header {
+	background-color: gray;
+	display: block;
+	height: 132px;
+}
+#content {
+	background-color: black;
+	display: block;
+	min-height: 550px;
+}

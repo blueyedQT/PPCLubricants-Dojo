@@ -27,5 +27,15 @@ body {
 	width: 550px;
 	height: 265px;
 	margin: 5px;
-
+}
+#bulk {
+	color: yellow;
+	line-height: 0;
+}
+.pages {
+	background-color: yellow;
+	height: 200px;
+	width: 227px;
+	display: inline-block;
+	margin: 5px;
 }

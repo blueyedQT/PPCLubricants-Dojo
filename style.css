@@ -1,5 +1,5 @@
 body {
-	width: 1022;
+	width: 1022px;
 	height: auto;
 }
 #header {
@@ -11,4 +11,21 @@ body {
 	background-color: black;
 	display: block;
 	min-height: 550px;
+	padding: 15px 30px;
+}
+#imageMain {
+	border: 4px solid white;
+	background-color: blue;
+	display: inline-block;
+	width: 378px;
+	height: 257px;
+	margin: 5px;
+}
+#main {
+	background-color: yellow;
+	display: inline-block;
+	width: 550px;
+	height: 265px;
+	margin: 5px;
+
 }

@@ -13,23 +13,12 @@ h3 {
 a {
 	text-decoration: none;
 }
-ul {
-	/*Trying to decide wither to use ul tag as my div or put in a seperate div
-	border-top: 2px solid black;*/
-	margin: 0px;
-	padding: 9px;
-}
-li {
-	list-style-type: none;
-	display: inline-block;
-	padding: 0 15px;
-}
 #header {
 	background-image: linear-gradient(#e9e9e9, white 40px);
-	/*background: -webkit-linear-gradient( rgba(248,248,248, 1, 20) , rgba(255,255, 255 ,0));
-    background: -o-linear-gradient(rgba(248,248,248, 1, 20), rgba(255,255, 255 ,0));
-    background: -moz-linear-gradient(rgba(248,248,248, 1, 20), rgba(255,255, 255 ,0));
-    background: linear-gradient(rgba(248,248,248, 1, 20), rgba(255,255, 255 ,0));*/
+	background-image: -webkit-linear-gradient(#e9e9e9, white 40px);
+    background-image: -o-linear-gradient(#e9e9e9, white 40px);
+    background-image: -moz-linear-gradient(#e9e9e9, white 40px);
+    background-image: linear-gradient(#e9e9e9, white 40px);
 	display: block;
 	height: 130px;
 	text-align: right;
@@ -42,16 +31,39 @@ li {
 	font-size: 150%;
 }
 #navigation {
-	/*Trying to decide wither to use ul tag as my div or put in a seperate div*/
-	background-image: linear-gradient(#e9e9e9, white 38px);
+	background-image: linear-gradient(#f4f7f8 15%, #d8dfe4 35%, #f4f7f8 40px);
+	background-image: -webkit-linear-gradient(#f4f7f8 15%, #d8dfe4 35%, #f4f7f8 40px);
+    background-image: -o-linear-gradient(#f4f7f8 15%, #d8dfe4 35%, #f4f7f8 40px);
+    background-image: -moz-linear-gradient(#f4f7f8 15%, #d8dfe4 35%, #f4f7f8 40px);
+    background-image: linear-gradient(#f4f7f8 15%, #d8dfe4 35%, #f4f7f8 40px);
 	border-top: 1px solid black;
 	height: 62px;
+	width: 1022px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
 }
-#navigation a{
-		color: gray;
+li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0;
+	padding: 9px 15px;
+	border-left: 2px ridge white;
+	vertical-align: top;
+	font-weight: bold;
+}
+li:last-child {
+	border-right: 2px ridge white;
+}
+#navigation a {
+	color: gray;
 }
 #content {
 	background-image: linear-gradient(to right, black, gray, black);
+	background-image: -webkit-linear-gradient(to right, black, gray, black);
+    background-image: -o-linear-gradient(to right, black, gray, black);
+    background-image: -moz-linear-gradient(to right, black, gray, black);
+    background-image: linear-gradient(to right, black, gray, black);
 	display: block;
 	min-height: 550px;
 	padding: 10px 30px;
@@ -69,13 +81,18 @@ li {
 	height: 265px;
 	margin: 5px;
 	vertical-align: top;
+	border: 1px solid black;
 }
 .yellow {
 	height: 12px;
 	background-image: linear-gradient(#fbd15b 10px, #fec72f 15px, #fece50);
+	background-image: -webkit-linear-gradient(#fbd15b 10px, #fec72f 15px, #fece50);
+    background-image: -o-linear-gradient(#fbd15b 10px, #fec72f 15px, #fece50);
+    background-image: -moz-linear-gradient(#fbd15b 10px, #fec72f 15px, #fece50);
+    background-image: linear-gradient(#fbd15b 10px, #fec72f 15px, #fece50);
 	font-weight: bold;
 	padding: 8px;
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid black;
 	font-size: 90%;
 }
 #main p, h3 {
@@ -87,30 +104,31 @@ li {
 	margin: 10px 0 0 0;
 }
 #ppcLogo {
-background-image: url('button.jpg');
-background-repeat: no-repeat;
-height: 17px;
-width: 55px;
-border: 0px;
-border-radius: 0 3px 3px 0;
-margin: 0 15px;
+	background-image: url('button.jpg');
+	background-repeat: no-repeat;
+	height: 17px;
+	width: 55px;
+	border: 0px;
+	border-radius: 0 3px 3px 0;
+	margin: 0 15px;
 }
 #bulk {
-	color: #877c51;
+	color: #bfbf88;
 	line-height: 0;
 	display: inline-block;
 }
 .pages {
 	background-color: white;
-	height: auto;
+	height: 260px;
 	width: 222px;
 	display: inline-block;
 	margin: 5px 9px 5px 4px;
 	vertical-align: top;
-	border: 1px solid gray;
+	border: 1px solid black;
+	position: relative;
 }
 .pages p {
-	padding: 10px;
+	padding: 0px 10px;
 	font-size: 80%;
 }
 .arrow {
@@ -118,5 +136,8 @@ margin: 0 15px;
 	border: 2px solid black;
 	border-radius: 4px 45px 45px 4px;
 	margin-left: 115px;
-	margin-bottom: 15px;
+	bottom: 15px;
+	right: 15px;
+	vertical-align: bottom;
+	position: absolute;
 }
